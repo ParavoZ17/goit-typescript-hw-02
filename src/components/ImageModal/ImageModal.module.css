@@ -1,0 +1,14 @@
+.modalContent {
+  max-width: 90vw; 
+  max-height: 90vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+
+.fullImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}

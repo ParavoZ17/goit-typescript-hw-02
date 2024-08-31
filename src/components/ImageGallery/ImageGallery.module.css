@@ -1,0 +1,16 @@
+.gallery{
+    max-width: 1240px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: yellow;
+}
+
+.item {
+    border-radius: 5px;
+width: calc((100% - 60px) / 4);
+height: 250px;
+}
