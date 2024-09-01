@@ -4,13 +4,19 @@ import toast, { Toaster } from 'react-hot-toast';
 
 import css from "./SearchBar.module.css"
 
-export default function SearchForm({ onSearch }) {
+interface SearchFormProps {
+  onSearch: (query:string) => void;
+}
+
+
+
+export default function SearchForm({ onSearch }:SearchFormProps) {
 
   return (
     <header className={css.header}>
       <Toaster />
       <Formik
-        initialValues={{ query: "" }}
+        initialValues={{ query: "" } }
         onSubmit={(values, actions) => {
           if(values.query.length < 2){
             toast.error("Type at least 2 characters.",{
